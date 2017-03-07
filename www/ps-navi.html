@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Photoshop Tools</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	 <script src="js/list.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a class="pg-photoshop icon icon-left pull-left"></a>
+        <h1 class="title" style="background-color:#090058; color: white"><b>Adobe Photoshop Tools</b></h1>
+    </header>
+<div id="photoshop">
+	<div class="bar bar-standard bar-header-secondary" style="background-color:#090058;">
+        	<form>
+            <input class="search" type="search" placeholder="Search">
+        </form>
+    </div>
+    <div class="content">
+
+
+        <ul class="table-view list" style="margin-top:0px">
+            
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Hand tool <img class="media-object" src="img/hand.jpg" alt="">
+        <p class="description">To navigate around an image, select the hand tool from the tools panel and drag to scroll the contents of the image. </p>
+
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Rotate view tool <img class="media-object" src="img/rotate.jpg" alt="">
+        <p class="description">If the 'Use Graphics Processor' option is enabled in the Photoshop Performance preferences, you can use the rotate view tool to rotate the Photoshop image canvas</p>
+        <img class="media-object" src="img/rotate-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Zoom tool <img class="media-object" src="img/zoom.jpg" alt="">
+        <p class="description">To zoom in on an image, either click with the zoom tool to magnify, or drag with the zoom tool, marqueeing the area you wish to zoom in to (but see the section below on the default selection of the Scrubby Zoom option).</p>
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Foreground/Background colors <img class="media-object" src="img/fgcolor.jpg" alt="">
+        <p class="description">The foreground and background color swatches indicate which colors you currently have selected as the foreground and background color. To reset these to the default colors, either click on the black/white foreground/background mini icon or simply click D . This will make black the foreground color and white the background color. Next to the main icon is a switch symbol. Clicking on this exchanges the colors, so that the foreground color now becomes the background color. The keyboard shortcut for this is x. You can also double-click the foreground or background color swatch to open the Color Picker dialog</p>
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    </ul>
+    </div>
+    <!-- /.content -->
+</div> 
+
+</body>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+var options = {
+  valueNames: ['description','media-body']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>

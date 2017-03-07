@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Photoshop Tools</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	 <script src="js/list.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a class="pg-photoshop icon icon-left pull-left"></a>
+        <h1 class="title" style="background-color:#090058; color: white"><b>Adobe Photoshop Tools</b></h1>
+    </header>
+<div id="photoshop">
+	<div class="bar bar-standard bar-header-secondary" style="background-color:#090058;">
+        	<form>
+            <input class="search" type="search" placeholder="Search">
+        </form>
+    </div>
+    <div class="content">
+
+
+        <ul class="table-view list" style="margin-top:0px">
+            
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Brush tool <img class="media-object" src="img/brush.jpg" alt="">
+        <p class="description">The painting tools are all grouped below the selection and move tools. There are some common options available for these tools.</p>
+        <img class="media-object" src="img/brush-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Pencil tool <img class="media-object" src="img/pencil.jpg" alt="">
+        <p class="description">The pencil can be used to produce hard edged, anti-aliased, pencil-like drawing lines. The pencil tool is simply a fast response sketching tool, that does have some uses, such as creating and editing icons.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Mixer brush tool <img class="media-object" src="img/mxrbrush.jpg" alt="">
+        <p class="description">The mixer brush tool allows you to paint more realistically in Photoshop. With the mixer brush you can mix colors together as you paint, picking up color samples from the image you are painting on and set the rate at which the brush picks up paint from the canvas and the rate at which the paint dries out. </p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Color replacement tool <img class="media-object" src="img/replace.jpg" alt="">
+        <p class="description">The color replacement tool is grouped with the brush and other paint tools in the Tools panel. </p>
+        <img class="media-object" src="img/replace-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        History brush <img class="media-object" src="img/history.jpg" alt="">
+        <p class="description">Photoshop’s History feature enables you to store multiple image states as you progress through a Photoshop session and work on an individual image.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Art History brush <img class="media-object" src="img/arthistory.jpg" alt="">
+        <p class="description">The art history brush samples from a history state, but the art history brush strokes can be applied using abstract characteristics that smudge the pixels when sampling from the selected history state. The brush characteristics are defined in the art history Options bar. The Tolerance determines how much paint to apply based on how close in color the paint strokes will be from the history to the destination color. And as the Area setting is made larger, the area coverage will increase and the paint strokes be more numerous.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Gradient tool <img class="media-object" src="img/gradient.jpg" alt="">
+        <p class="description">The gradient tool can be used to draw linear, radial, angular, reflected or diamond gradients. To use the gradient tool go to the Options bar and click on the gradient ramp.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Paint bucket tool <img class="media-object" src="img/bucket.jpg" alt="">
+        <p class="description">The paint bucket tool amounts to the same as ‘make a magic wand selection based on the sampled color and Tolerance setting in the Options bar and fill the selection with the current foreground color or predefined pattern’. </p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    
+    </li>
+    </ul>
+    </div>
+    <!-- /.content -->
+</div> 
+
+</body>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+var options = {
+  valueNames: ['description','media-body']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>

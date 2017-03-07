@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Photoshop Tools</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	 <script src="js/list.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a class="pg-photoshop icon icon-left pull-left"></a>
+        <h1 class="title" style="background-color:#090058; color: white"><b>Adobe Photoshop Tools</b></h1>
+    </header>
+<div id="photoshop">
+	<div class="bar bar-standard bar-header-secondary" style="background-color:#090058;">
+        	<form>
+            <input class="search" type="search" placeholder="Search">
+        </form>
+    </div>
+    <div class="content">
+
+
+        <ul class="table-view list" style="margin-top:0px">
+            <li class="table-view-cell media">
+                <div class="media-body">
+                    Crop Tool <img class="media-object" src="img/crop.jpg" alt="">
+                    <p class="description">The crop tool can be used to crop an image to delete or hide the image data that falls outside the selected crop area. </p>
+                    <img class="media-object" src="img/crop-pic.jpg" style="width:100%" alt="">
+                    <small><em>Category:</em> Crop and Slice Tool</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Perspective Crop Tool <img class="media-object" src="img/pcrop.jpg" alt="">
+                    <p class="description">The perspective crop tool can be used to crop and correct the converging verticals or horizontal lines in a picture with a single crop action.</p>
+                    <img class="media-object" src="img/pcrop-pic.jpg" style="width:100%">
+                    <small><em>Category:</em> Crop and Slice Tool</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Slice tool <img class="media-object" src="img/slice1.jpg" alt=""> and
+                    <br> Slice select tool <img class="media-object" src="img/slice2.jpg" alt="">
+                    <p class="description">The slice tools in Photoshop are particularly useful for Web designer’s as these allow them to divide an image up into rectangular sections, and the slices can then be used in Photoshop to specify how each individual slice will be optimized, what file format a slice area should be saved in and what compression settings should be used.</p>
+                    <small><em>Category:</em> Crop and Slice Tool</small>
+                </div>
+            </li>
+            
+    </ul>
+    </div>
+    <!-- /.content -->
+</div> 
+
+</body>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+var options = {
+  valueNames: ['description','media-body']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Adobe Tutor</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	<script src="js/list.min.js"></script>
+</head>
+
+<body style="background-color:#0A2431">
+<center><img id="img-ps" class="media-object" src="img/lr_logo.png" alt="" style="width: 50%; margin-top:15vh "></center>
+
+<div class="container" style="margin:10vh 20px 20px 20px">
+<button class="pg-ps-selection btn" style="font-weight:bold; width: 35vw; margin: 15px;color:#0A2431;background-color:#AAD0EF">Selection Tool</button>
+<button class="pg-ps-crop btn" style="font-weight:bold; width: 35vw; margin:15px; color:#0A2431;background-color:#AAD0EF">Crop and Slice Tool</button>
+<button class="pg-ps-measure btn" style="font-weight:bold; width: 35vw; margin: 15px;color:#0A2431;background-color:#AAD0EF">Measuring Tool</button>
+<button class="pg-ps-retouch btn" style="font-weight:bold; width: 35vw; margin: 15px;color:#0A2431;background-color:#AAD0EF">Retouching Tool</button>
+<button class="pg-ps-paint btn" style="font-weight:bold; width: 35vw; margin: 15px;color:#0A2431;background-color:#AAD0EF">Painting Tool</button>
+
+<button class="pg-ps-navi btn btn-primary" style="font-weight:bold; width: 35vw; margin: 15px;color:#0A2431;background-color:#AAD0EF">Navigation Tool</button>
+<center><button class="pg-ps-draw btn btn-primary" style="font-weight:bold; width: 50vw; margin: 15px;color:#0A2431;background-color:#AAD0EF">Drawing and Type Tool</button></center>
+
+</div>
+
+</body>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+var options = {
+  valueNames: ['description']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>

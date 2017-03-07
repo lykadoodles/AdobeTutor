@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Photoshop Tools</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	 <script src="js/list.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a class="pg-flash icon icon-left pull-left" style="color: #462621"></a>
+        <h1 class="title" style="background-color:#d12727; color: white"><b>Adobe Flash Tools</b></h1>
+    </header>
+<div id="photoshop">
+	<div class="bar bar-standard bar-header-secondary" style="background-color:#462621;">
+        	<form>
+            <input class="search" type="search" placeholder="Search">
+        </form>
+    </div>
+    <div class="content">
+
+
+        <ul class="table-view list" style="margin-top:0px">
+            <li class="table-view-cell media" style="padding-right:20px;">
+                <div class="media-body">
+                    Timeline  
+                    <p class="description" style="text-align:justify">
+					&nbsp; The Timeline organizes and controls a document’s content over time in layers and frames. Like films, Flash Professional documents divide lengths of time into frames. Layers are like multiple film strips stacked on top of one another, each containing a different image that appears on the Stage. The major components of the Timeline are layers, frames, and the playhead. Layers in a document are listed in a column on the left side of the Timeline. Frames contained in each layer appear in a row to the right of the layer name. The Timeline header at the top of the Timeline indicates frame numbers. The playhead indicates the current frame displayed on the Stage. As a document plays, the playhead moves from left to right through the Timeline. The Timeline status displayed at the bottom of the Timeline indicates the selected frame number, the current frame rate, and the elapsed time to the current frame.
+
+					</p>
+                    
+                </div>
+            </li>
+            <li class="table-view-cell media">
+                <div class="media-body">
+                    Marquee Selection Tools 
+					<img class="media-object" src="img/fl-transform.jpg" alt="">
+                    <p class="description">The following tools allow you to select regions in your image to alter, copy, move, and apply filters.</p>
+                    
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Lasso tools 
+					<img class="media-object" src="img/lasso.jpg" alt="">
+                    <p class="description">The lasso Selection Tools are similar to the marquee tools, except that the lasso tools give you ultimate freedom in terms of the shape of your selection. There are three different lasso tools:</p>
+                    
+                    <p class="description">A note about lasso tool options: When extracting part of an image from its background, the result will be choppy and rough around the edges unless you adjust the feather value in the options bar. This fades the edges you create and can smooth the region into its new background.</p>
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+ 
+    </ul>
+    </div>
+    <!-- /.content -->
+</div> 
+
+</body>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+var options = {
+  valueNames: ['description','media-body']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Photoshop Tools</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	 <script src="js/list.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <a class="pg-photoshop icon icon-left pull-left"></a>
+        <h1 class="title" style="background-color:#090058; color: white"><b>Adobe Photoshop Tools</b></h1>
+    </header>
+<div id="photoshop">
+	<div class="bar bar-standard bar-header-secondary" style="background-color:#090058;">
+        	<form>
+            <input class="search" type="search" placeholder="Search">
+        </form>
+    </div>
+    <div class="content">
+
+
+        <ul class="table-view list" style="margin-top:0px">
+          
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Eyedropper tool <img class="media-object" src="img/eyedropper.jpg" alt="">
+                    <p class="description">The eyedropper tool can be used to sample pixel color values from any open image window and make the sampled color the new foreground color.</p>
+                </div>
+                <small><em>Category:</em> Measuring Tools</small>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Color sampler tool <img class="media-object" src="img/colorsampler.jpg" alt="">
+                    <p class="description">The color sampler tool works in the same way as the eyedropper tool, except it creates persistent pixel value readouts that are displayed in the Info panel and is capable of displaying up to four color sample point readouts in an image. </p>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Ruler tool <img class="media-object" src="img/ruler.jpg" alt="">
+                    <p class="description">The ruler tool lets you measure distances and angles in an image. To draw a measuring line, make sure the Info panel and/or ruler tool options bar are visible and click and drag with the ruler tool in an image document window. </p>
+                </div>
+                <small><em>Category:</em> Measuring Tools</small>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Note tool <img class="media-object" src="img/note.jpg" alt="">
+                    <p class="description">You can use the note tool to add text notes to a file in Photoshop. Documents that are annotated in this way can be saved in the Photoshop (PSD), PDF or TIFF formats. </p>
+                    <small><em>Category:</em> Measuring Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Count tool <img class="media-object" src="img/count.jpg" alt="">
+                    <p class="description">You can use the note tool to add text notes to a file in Photoshop. Documents that are annotated in this way can be saved in the Photoshop (PSD), PDF or TIFF formats. </p>
+                    <img class="media-object" src="img/count-pic.jpg" style="width:100%">
+                    <small><em>Category:</em> Measuring Tools</small>
+                </div>
+            </li>
+            
+    </ul>
+    </div>
+    <!-- /.content -->
+</div> 
+
+</body>
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/script.js"></script>
+<script>
+
+var options = {
+  valueNames: ['description','media-body']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Photoshop Tools</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/ratchet.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/ratchet.min.js"></script>
+	 <script src="js/list.min.js"></script>
+</head>
+
+<body>
+    <header class="bar bar-nav">
+        <!-- <a class="icon icon-gear pull-right" href="#settingsModal"></a> -->
+        <h1 class="title"><b>Adobe Photoshop Tools</b></h1>
+    </header>
+<div id="photoshop">
+	<div class="bar bar-standard bar-header-secondary">
+        	<form>
+            <input class="search" type="search" placeholder="Search">
+        </form>
+    </div>
+    <div class="content">
+
+
+        <ul class="table-view list" style="margin-top:0px">
+            <li class="table-view-cell media">
+                <div class="media-body">
+                    Move Tool <img class="media-object" src="img/selection.jpg" alt="">
+                    <p class="description">The move tool moves an entire layer at a time. When you have selected this tool, click on a layer in the layer pane, and then click and drag on the image. The current layer will move all at once. You can even move it outside of the current image size. Don't worry, though, parts of an image that move outside the borders still exist - they are just hidden. They will only be cropped out if you flatten the image.</p>
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+                <div class="media-body">
+                    Marquee Selection Tools 
+					<img class="media-object" src="img/marquee.jpg" alt="">
+                    <p class="description">The following tools allow you to select regions in your image to alter, copy, move, and apply filters.</p>
+                    
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Lasso tools 
+					<img class="media-object" src="img/lasso.jpg" alt="">
+                    <p class="description">The lasso Selection Tools are similar to the marquee tools, except that the lasso tools give you ultimate freedom in terms of the shape of your selection. There are three different lasso tools:</p>
+                    
+                    <p class="description">A note about lasso tool options: When extracting part of an image from its background, the result will be choppy and rough around the edges unless you adjust the feather value in the options bar. This fades the edges you create and can smooth the region into its new background.</p>
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Magic Wand Tool <img class="media-object" src="img/magicwand.jpg" alt="">
+                    <p class="description">The magic wand tool is similar to the magnetic polygon lasso tool except that rather than dragging to make a selection, you click in a region and a selection appears around similar colored pixels. You can control how similar pixels must be to be included in the selection by altering the tolerance value. This tool is useful for selecting monochromatic regions or pieces of high-contrast images.
+                    </p> 
+					<img class="media-object" src="img/magicwand-pic.jpg" style="width:100%" alt="">
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Quick Selection Tools <img class="media-object" src="img/quick.jpg" alt="">
+                    <p class="description">The quick Selection Tools is like the magic wand tool, it can be used to make selections based on pixel color values, except the quick Selection Tools is a little more sophisticated than the standard magic wand and hence, has been made the new default tool in this particular tool grouping.</p>
+                    <img class="media-object" src="img/quick-pic.jpg" style="width:100%">
+                    <small><em>Category:</em> Selection Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Crop Tool <img class="media-object" src="img/crop.jpg" alt="">
+                    <p class="description">The crop tool can be used to crop an image to delete or hide the image data that falls outside the selected crop area. </p>
+                    <img class="media-object" src="img/crop-pic.jpg" style="width:100%" alt="">
+                    <small><em>Category:</em> Crop and Slice Tool</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Perspective Crop Tool <img class="media-object" src="img/pcrop.jpg" alt="">
+                    <p class="description">The perspective crop tool can be used to crop and correct the converging verticals or horizontal lines in a picture with a single crop action.</p>
+                    <img class="media-object" src="img/pcrop-pic.jpg" style="width:100%">
+                    <small><em>Category:</em> Crop and Slice Tool</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Slice tool <img class="media-object" src="img/slice1.jpg" alt=""> and
+                    <br> Slice select tool <img class="media-object" src="img/slice2.jpg" alt="">
+                    <p class="description">The slice tools in Photoshop are particularly useful for Web designer’s as these allow them to divide an image up into rectangular sections, and the slices can then be used in Photoshop to specify how each individual slice will be optimized, what file format a slice area should be saved in and what compression settings should be used.</p>
+                    <small><em>Category:</em> Crop and Slice Tool</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Eyedropper tool <img class="media-object" src="img/eyedropper.jpg" alt="">
+                    <p class="description">The eyedropper tool can be used to sample pixel color values from any open image window and make the sampled color the new foreground color.</p>
+                </div>
+                <small><em>Category:</em> Measuring Tools</small>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Color sampler tool <img class="media-object" src="img/colorsampler.jpg" alt="">
+                    <p class="description">The color sampler tool works in the same way as the eyedropper tool, except it creates persistent pixel value readouts that are displayed in the Info panel and is capable of displaying up to four color sample point readouts in an image. </p>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Ruler tool <img class="media-object" src="img/ruler.jpg" alt="">
+                    <p class="description">The ruler tool lets you measure distances and angles in an image. To draw a measuring line, make sure the Info panel and/or ruler tool options bar are visible and click and drag with the ruler tool in an image document window. </p>
+                </div>
+                <small><em>Category:</em> Measuring Tools</small>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Note tool <img class="media-object" src="img/note.jpg" alt="">
+                    <p class="description">You can use the note tool to add text notes to a file in Photoshop. Documents that are annotated in this way can be saved in the Photoshop (PSD), PDF or TIFF formats. </p>
+                    <small><em>Category:</em> Measuring Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Count tool <img class="media-object" src="img/count.jpg" alt="">
+                    <p class="description">You can use the note tool to add text notes to a file in Photoshop. Documents that are annotated in this way can be saved in the Photoshop (PSD), PDF or TIFF formats. </p>
+                    <img class="media-object" src="img/count-pic.jpg" style="width:100%">
+                    <small><em>Category:</em> Measuring Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+
+                <div class="media-body">
+                    Spot healing brush <img class="media-object" src="img/spot.jpg" alt="">
+                    <p class="description">The spot healing brush is the default healing tool in Photoshop and can be used to clone areas from an image and blend the pixels from the sampled area seamlessly with the target area. </p>
+                    <small><em>Category:</em> Retouching Tools</small>
+                </div>
+            </li>
+            <li class="table-view-cell media">
+			<div class="media-body">
+                Healing brush <img class="media-object" src="img/healing.jpg" alt="">
+                <p class="description">The healing brush enables you to clone areas from an image and blend the pixels from the sampled area seamlessly with the target area.</p>
+                <img class="media-object" src="img/healing-pic1.jpg" style="width:100%">
+                <small><em>Category:</em> Retouching Tools</small>
+			</div>
+			</li>
+    <li class="table-view-cell media"> 
+	<div class="media-body">
+        Patch tool <img class="media-object" src="img/patch.jpg" alt="">
+        <p class="description">The patch tool uses the same complex algorithm as the healing brush to carry out its blend calculations, but the patch tool works with selection-defined areas instead of a brush. </p>
+        <img class="media-object" src="img/patch-pic1.jpg" style="width:100%">
+        <img class="media-object" src="img/patch-pic2.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media"> 
+	<div class="media-body">
+        Content-aware move tool <img class="media-object" src="img/content.jpg" alt="">
+        <p class="description">A content-aware move tool has now been added to the healing group of tools. This tool works in a similar way to the patch tool in Destination mode, except it allows you to either extend a selected area or move it and fill the initial selected area.</p>
+        <img class="media-object" src="img/content-pic1.jpg" style="width:100%">
+        <img class="media-object" src="img/content-pic2.jpg" style="width:100%">
+        <img class="media-object" src="img/content-pic3.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media"> 
+		<div class="media-body">
+        Red eye tool <img class="media-object" src="img/redeye.jpg" alt="">
+        <p class="description">The red eye tool in Photoshop is an easy-to-use tool for removing red eye from photographs that have been taken with a direct flash source.</p>
+        <img class="media-object" src="img/redeye-pic1.jpg" style="width:100%">
+        <img class="media-object" src="img/redeye-pic2.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        The clone stamp tool <img class="media-object" src="img/stamp.jpg" alt="">
+        <p class="description">The clone stamp tool is used to sample pixels from one part of the image to paint in another. This is an essential tool for retouching work such as spotting and general image repairing.</p>
+        <img class="media-object" src="img/stamp-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Eraser tool <img class="media-object" src="img/eraser.jpg" alt="">
+        <p class="description">The eraser tool behaves in two ways depending on whether it is being used on the background or a layer. When used on the background layer, it removes pixels from an image, replacing them with the current background swatch color.</p>
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Background eraser tool <img class="media-object" src="img/bgerase.jpg" alt="">
+        <p class="description">The background eraser tool erases the pixels based on the pixel colors sampled by the tool. The sampling options are accessed via the buttons in the Options bar next to the brush preset picker.</p>
+        <img class="media-object" src="img/bgerase-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Magic eraser tool <img class="media-object" src="img/mgerase.jpg" alt="">
+        <p class="description">The magic eraser tool works like the paint bucket tool in reverse. It can be used to erase neighboring or ‘similar’ pixels, based on the pixel color value where you click. It’s a very basic ‘one-shot’ tool and you should probably avoid using it if you can since the background eraser offers more adjustable control over how the pixels are erased. </p>
+        <img class="media-object" src="img/mgerase-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Blur tool <img class="media-object" src="img/blur.jpg" alt="">
+        <p class="description">The blur tool can be used to apply localized blurring to a photo, soften portions of an image, or smooth over-sharp edges in an image or alpha channel mask.</p>
+
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Sharpen tool <img class="media-object" src="img/sharpen.jpg" alt="">
+        <p class="description">The sharpen tool allows you to apply localized sharpening effects to an image. Prior to Photoshop CS5 there were no circumstances where one would suggest using the sharpen tool since the outcome was pretty ugly looking sharpening artifacts.</p>
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Smudge tool <img class="media-object" src="img/smudge.jpg" alt="">
+        <p class="description">The smudge tool is an interesting painting tool to work with because it can be used to smear pixels the same way as one might mix paints together.</p>
+        <img class="media-object" src="img/smudge-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Dodge tool <img class="media-object" src="img/dodge.jpg" alt=""> and Burn tool <img class="media-object" src="img/burn.jpg" alt="">
+        <p class="description">The dodge and burn tools in Photoshop offer you a limited amount of dodge and burn control, although these tools are not really suitable for working with large areas of an image. Having said that, the dodge and burn tools have been improved since Photoshop CS4 such that you can now use them to more effectively dodge and burn the pixels direct without producing the rather ugly effect.</p>
+
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Sponge tool <img class="media-object" src="img/sponge.jpg" alt="">
+        <p class="description">The dodge and burn tools in Photoshop offer you a limited amount of dodge and burn control, although these tools are not really suitable for working with large areas of an image. Having said that, the dodge and burn tools have been improved since Photoshop CS4 such that you can now use them to more effectively dodge and burn the pixels direct without producing the rather ugly effect.</p>
+
+        <small><em>Category:</em> Retouching Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Brush tool <img class="media-object" src="img/brush.jpg" alt="">
+        <p class="description">The painting tools are all grouped below the selection and move tools. There are some common options available for these tools.</p>
+        <img class="media-object" src="img/brush-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Pencil tool <img class="media-object" src="img/pencil.jpg" alt="">
+        <p class="description">The pencil can be used to produce hard edged, anti-aliased, pencil-like drawing lines. The pencil tool is simply a fast response sketching tool, that does have some uses, such as creating and editing icons.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Mixer brush tool <img class="media-object" src="img/mxrbrush.jpg" alt="">
+        <p class="description">The mixer brush tool allows you to paint more realistically in Photoshop. With the mixer brush you can mix colors together as you paint, picking up color samples from the image you are painting on and set the rate at which the brush picks up paint from the canvas and the rate at which the paint dries out. </p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Color replacement tool <img class="media-object" src="img/replace.jpg" alt="">
+        <p class="description">The color replacement tool is grouped with the brush and other paint tools in the Tools panel. </p>
+        <img class="media-object" src="img/replace-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        History brush <img class="media-object" src="img/history.jpg" alt="">
+        <p class="description">Photoshop’s History feature enables you to store multiple image states as you progress through a Photoshop session and work on an individual image.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Art History brush <img class="media-object" src="img/arthistory.jpg" alt="">
+        <p class="description">The art history brush samples from a history state, but the art history brush strokes can be applied using abstract characteristics that smudge the pixels when sampling from the selected history state. The brush characteristics are defined in the art history Options bar. The Tolerance determines how much paint to apply based on how close in color the paint strokes will be from the history to the destination color. And as the Area setting is made larger, the area coverage will increase and the paint strokes be more numerous.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Gradient tool <img class="media-object" src="img/gradient.jpg" alt="">
+        <p class="description">The gradient tool can be used to draw linear, radial, angular, reflected or diamond gradients. To use the gradient tool go to the Options bar and click on the gradient ramp.</p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Paint bucket tool <img class="media-object" src="img/bucket.jpg" alt="">
+        <p class="description">The paint bucket tool amounts to the same as ‘make a magic wand selection based on the sampled color and Tolerance setting in the Options bar and fill the selection with the current foreground color or predefined pattern’. </p>
+
+        <small><em>Category:</em> Painting Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Pen tool <img class="media-object" src="img/pen.jpg" alt="">
+        <p class="description">Photoshop provides a suite of vector path drawing tools that work in the same way as the pen path tools found in Adobe Illustrator and other programs that enable you to draw vector paths. </p>
+        <img class="media-object" src="img/pen-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Freeform Pen tool <img class="media-object" src="img/freeform.jpg" alt="">
+        <p class="description">The freeform pen tool operates more or less exactly like the lasso tool. The main difference is that the freeform pen tool automatically evens out the rough edges as you draw an outline in order to produce a pen path that uses as few anchor points as possible. </p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Add anchor tool <img class="media-object" src="img/addanchor.jpg" alt="">
+        <p class="description">When the add anchor point tool is selected you can use it to click on a path segment to add a new anchor point to a path.</p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Delete anchor tool <img class="media-object" src="img/addanchor.jpg" alt="">
+        <p class="description">When the delete anchor point tool is selected you can use it to click on an existing anchor point to delete it.</p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Convert point tool <img class="media-object" src="img/convert.jpg" alt="">
+        <p class="description">When you draw a pen path, the pen tool will lay down what are known as smooth points. </p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Horizontal type tool <img class="media-object" src="img/hortype.jpg" alt=""> and vertical type tool <img class="media-object" src="img/vertype.jpg" alt="">
+        <p class="description">The type tool allows direct on-image text editing. The only difference between the horizontal and vertical type tools is that the horizontal type tool adds text horizontally and the vertical type tool adds text vertically.</p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Horizontal type mask tool <img class="media-object" src="img/hormask.jpg" alt=""> and Vertical type mask tool <img class="media-object" src="img/vermask.jpg" alt="">
+        <p class="description">The horizontal type mask and vertical type mask tools offer the same level of typographic control as the standard type tools.</p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Path Selection tool <img class="media-object" src="img/path.jpg" alt="">
+        <p class="description">Photoshop provides a suite of vector path drawing tools that work in the same way as the pen path tools found in Adobe Illustrator and other programs that enable you to draw vector paths.</p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Shape tool <img class="media-object" src="img/shape.jpg" alt="">
+        <p class="description">The shape tools allow you to add graphic shapes in the form of a filled layer with a vector mask, a solid fill, or as a path outline. Using the shape tools you can draw rectangular, rounded rectangular, elliptical, polygon, line or custom shapes.</p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Rectangle shape tool <img class="media-object" src="img/rect.jpg" alt="">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Rounded rectangle shape tool <img class="media-object" src="img/roundrect.jpg" alt="">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Ellipse shape tool <img class="media-object" src="img/ellipse.jpg" alt="">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Polygon shape tool <img class="media-object" src="img/poly.jpg" alt="">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Line tool <img class="media-object" src="img/line.jpg" alt="">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Custom shape tool <img class="media-object" src="img/custom.jpg" alt="">
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Direct selection tool <img class="media-object" src="img/direct.jpg" alt="">
+        <p class="description">Photoshop provides a suite of vector path drawing tools that work in the same way as the pen path tools found in other graphics programs, such as Adobe Illustrator. </p>
+
+        <small><em>Category:</em> Drawing and Type Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Hand tool <img class="media-object" src="img/hand.jpg" alt="">
+        <p class="description">To navigate around an image, select the hand tool from the tools panel and drag to scroll the contents of the image. </p>
+
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Rotate view tool <img class="media-object" src="img/rotate.jpg" alt="">
+        <p class="description">If the 'Use Graphics Processor' option is enabled in the Photoshop Performance preferences, you can use the rotate view tool to rotate the Photoshop image canvas</p>
+        <img class="media-object" src="img/rotate-pic.jpg" style="width:100%">
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Zoom tool <img class="media-object" src="img/zoom.jpg" alt="">
+        <p class="description">To zoom in on an image, either click with the zoom tool to magnify, or drag with the zoom tool, marqueeing the area you wish to zoom in to (but see the section below on the default selection of the Scrubby Zoom option).</p>
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    <li class="table-view-cell media">
+	<div class="media-body">
+        Foreground/Background colors <img class="media-object" src="img/fgcolor.jpg" alt="">
+        <p class="description">The foreground and background color swatches indicate which colors you currently have selected as the foreground and background color. To reset these to the default colors, either click on the black/white foreground/background mini icon or simply click D . This will make black the foreground color and white the background color. Next to the main icon is a switch symbol. Clicking on this exchanges the colors, so that the foreground color now becomes the background color. The keyboard shortcut for this is x. You can also double-click the foreground or background color swatch to open the Color Picker dialog</p>
+        <small><em>Category:</em> Navigation Tools</small>
+        </div>
+    </li>
+    </ul>
+    </div>
+    <!-- /.content -->
+</div> 
+   <nav class="bar bar-tab">
+  <a class="tab-item active" href="#">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">Photoshop</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">Illustrator</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">Lightroom</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">Flash</span>
+  </a>
+  <a class="tab-item" href="#">
+    <span class="icon icon-star-filled"></span>
+    <span class="tab-label">Quiz</span>
+  </a>
+</nav>
+</body>
+<script>
+var options = {
+  valueNames: ['description']
+};
+
+var photoshopList = new List('photoshop', options);
+</script>
+</html>
