@@ -3,6 +3,14 @@ $(document).ready(function () {
     onDeviceReady();
 
     function onDeviceReady() {
+		
+		//quiz
+		$(".wrong").click(function () {
+			$(this).css("color","red");
+        })
+		$(".correct").click(function () {
+			$(this).css("color","green");
+        })
 
         //page buttons
 
@@ -22,6 +30,9 @@ $(document).ready(function () {
 		$(".pg-home").click(function () {
             window.location = "index.html";
         })	
+		$(".pg-quiz").click(function () {
+            window.location = "quiz.html";
+        })
 		
 		//pg-fl 
 		$(".pg-fl-all").click(function () {
@@ -32,7 +43,7 @@ $(document).ready(function () {
         })
 		
 		//pg-ai 
-		$(".pg-ai-all").click(function () {
+		$("#img-ai").click(function () {
             window.location = "ai-all.html";
         })	
 		$(".pg-ai-select").click(function () {
@@ -58,6 +69,35 @@ $(document).ready(function () {
         })	
 		$(".pg-ai-draw").click(function () {
             window.location = "ai-draw.html";
+        })	
+		
+		//pg-lr
+		$(".pg-lr-what").click(function () {
+            window.location = "lr-what.html";
+        })	
+		$(".pg-lr-over").click(function () {
+            window.location = "lr-over.html";
+        })	
+		$(".pg-lr-lib").click(function () {
+            window.location = "lr-lib.html";
+        })	
+		$(".pg-lr-dev").click(function () {
+            window.location = "lr-dev.html";
+        })	
+		$(".pg-lr-map").click(function () {
+            window.location = "lr-map.html";
+        })	
+		$(".pg-lr-book").click(function () {
+            window.location = "lr-book.html";
+        })	
+		$(".pg-lr-slide").click(function () {
+            window.location = "lr-slide.html";
+        })	
+		$(".pg-lr-print").click(function () {
+            window.location = "lr-print.html";
+        })	
+		$(".pg-lr-web").click(function () {
+            window.location = "lr-web.html";
         })	
 		
 		
